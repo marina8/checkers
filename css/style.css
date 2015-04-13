@@ -1,0 +1,161 @@
+.board{
+	width: 50vw;
+	height: 50vw;
+	border:5px solid grey;
+	position:relative;
+	margin:auto;
+	background:#a0786a;
+}
+[class^="row"]{
+	position:absolute;
+	width: 100%;
+	height: 12.5%;
+	margin:0;
+	left:0;
+}
+[class^="cell"]{/*class begins with cell*/
+	width:12.5%;
+	height:100%;
+	position:absolute;
+}
+/*board color pattern*/
+.board>[class*="row"]:nth-child(even)>div:nth-child(even){
+	background: #e0d6c0;
+}
+.board>[class*="row"]:nth-child(odd)>div:nth-child(odd){
+	background: #e0d6c0;
+}
+[class*="chess"]{
+	width:90%;
+	height:90%;
+	margin:5%;
+	border-radius:50%;
+	box-shadow: 1px 2px 1px #60483f;
+	position:absolute;
+}
+.chess1{
+	background-color: #503c35;/*темная шашка*/
+	box-shadow: 1px 2px 1px #70544a;
+}
+.chess2{
+	background-color: #ece4e1;/*светлая шашка*/
+}
+/*coordinates of lines*/
+.row8{
+	top:0;
+}
+.row7{
+	top:12.5%;
+}
+.row6{
+	top:25%;
+}
+.row5{
+	top:37.5%;
+}
+.row4{
+	bottom:37.5%;
+}
+.row3{
+	bottom:25%;
+}
+.row2{
+	bottom:12.5%;
+}
+.row1{
+	bottom:0;
+}
+/*----coordinates of cells---*/
+[class^="cell-8"],
+[class^="cell-7"],
+[class^="cell-6"],
+[class^="cell-5"]{
+	top: 0;
+}
+[class^="cell-4"],
+[class^="cell-3"],
+[class^="cell-2"],
+[class^="cell-1"]{
+	bottom:0;
+}
+/*-------------rows------------*/
+.cell-8a,
+.cell-7a,
+.cell-6a,
+.cell-5a,
+.cell-4a,
+.cell-3a,
+.cell-2a,
+.cell-1a{
+	left:0;
+}
+.cell-8b,
+.cell-7b,
+.cell-6b,
+.cell-5b,
+.cell-4b,
+.cell-3b,
+.cell-2b,
+.cell-1b{
+	left:12.5%;
+}
+.cell-8c,
+.cell-7c,
+.cell-6c,
+.cell-5c,
+.cell-4c,
+.cell-3c,
+.cell-2c,
+.cell-1c{
+	left:25%;
+}
+.cell-8d,
+.cell-7d,
+.cell-6d,
+.cell-5d,
+.cell-4d,
+.cell-3d,
+.cell-2d,
+.cell-1d{
+	left:37.5%;
+}
+.cell-8e,
+.cell-7e,
+.cell-6e,
+.cell-5e,
+.cell-4e,
+.cell-3e,
+.cell-2e,
+.cell-1e{
+	right:37.5%;
+}
+.cell-8f,
+.cell-7f,
+.cell-6f,
+.cell-5f,
+.cell-4f,
+.cell-3f,
+.cell-2f,
+.cell-1f{
+	right:25%;
+}
+.cell-8g,
+.cell-7g,
+.cell-6g,
+.cell-5g,
+.cell-4g,
+.cell-3g,
+.cell-2g,
+.cell-1g{
+	right:12.5%;
+}
+.cell-8h,
+.cell-7h,
+.cell-6h,
+.cell-5h,
+.cell-4h,
+.cell-3h,
+.cell-2h,
+.cell-1h{
+	right:0;
+}
